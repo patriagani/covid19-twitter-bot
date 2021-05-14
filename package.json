@@ -1,0 +1,26 @@
+{
+  "name": "covid19-twitter-bot",
+  "version": "1.0.0",
+  "description": "covid19-bot",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patriagani/covid19-twitter-bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patriagani/covid19-twitter-bot/issues"
+  },
+  "homepage": "https://github.com/patriagani/covid19-twitter-bot#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^9.0.2",
+    "node-schedule": "^2.0.0",
+    "twit": "^2.2.11"
+  }
+}
