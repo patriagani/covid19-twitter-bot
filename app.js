@@ -5,7 +5,7 @@ const axios = require('axios')
 
 const T = new Twit(config);
 
-const jobIndonesia = schedule.scheduleJob('0 4 * * *', function(){
+const jobIndonesia = schedule.scheduleJob('0 2,14 * * *', function(){
     axios.get('https://api.kawalcorona.com/indonesia')
         .then((response) => {
             let positif = response.data[0].positif
@@ -25,7 +25,7 @@ const jobIndonesia = schedule.scheduleJob('0 4 * * *', function(){
         })
   });
 
-  const jobWorld = schedule.scheduleJob('0 3 * * *', function(){
+  const jobWorld = schedule.scheduleJob('0 1,13 * * *', function(){
     let positif = ""
     let sembuh = ""
     let meninggal = ""
